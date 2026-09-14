@@ -36,17 +36,17 @@ const Icon = ({ name, size = 22, className = '' }) => {
 
 const copy = {
   en: {
-    app: 'ORCA', tagline: 'Coastal decision service', connected: 'Data connected', location: 'Kochi Harbour', greeting: 'Good morning, Deepak', planTitle: 'Plan today’s trip', sub: 'Here is what the Arabian Sea looks like today.',
+    app: 'ORCA', tagline: 'Coastal decision service', connected: 'Data connected', location: 'Kochi Harbour', greeting: 'Good morning, Deepak', planTitle: 'Today’s fishing plan', sub: 'Here is what the Arabian Sea looks like today.',
     safeTitle: 'Safe to leave until 11:00 AM', safeBody: 'Conditions are calm near the coast. Return before the afternoon wind strengthens.', ask: 'Ask ORCA anything', placeholder: 'Can I go fishing now?', recommended: 'Recommended fishing zone', why: 'Why this zone?', openRoute: 'Show safe route', todaysPlan: "Today's simple plan",
     nav: { home:'Home', zones:'Fishing zones', weather:'Sea & weather', route:'Safe route', safety:'Safety & alerts', assistant:'Ask ORCA', history:'Trip history', settings:'Accessibility' },
   },
   hi: {
-    app: 'ORCA', tagline: 'तटीय निर्णय सेवा', connected: 'डेटा जुड़ा है', location: 'कोच्चि बंदरगाह', greeting: 'सुप्रभात, दीपक', planTitle: 'आज की यात्रा की योजना', sub: 'आज अरब सागर की स्थिति ऐसी है।',
+    app: 'ORCA', tagline: 'तटीय निर्णय सेवा', connected: 'डेटा जुड़ा है', location: 'कोच्चि बंदरगाह', greeting: 'सुप्रभात, दीपक', planTitle: 'आज की मछली पकड़ने की योजना', sub: 'आज अरब सागर की स्थिति ऐसी है।',
     safeTitle: 'सुबह 11 बजे तक समुद्र सुरक्षित है', safeBody: 'तट के पास समुद्र शांत है। दोपहर की हवा तेज़ होने से पहले लौटें।', ask: 'ORCA से पूछें', placeholder: 'क्या मैं अभी मछली पकड़ने जा सकता हूँ?', recommended: 'सुझाया गया मछली क्षेत्र', why: 'यह क्षेत्र क्यों?', openRoute: 'सुरक्षित रास्ता देखें', todaysPlan: 'आज की सरल योजना',
     nav: { home:'होम', zones:'मछली क्षेत्र', weather:'समुद्र और मौसम', route:'सुरक्षित रास्ता', safety:'सुरक्षा अलर्ट', assistant:'ORCA से पूछें', history:'यात्रा इतिहास', settings:'पहुंच सुविधाएँ' },
   },
   ml: {
-    app: 'ഓർക്ക', tagline: 'തീരദേശ തീരുമാന സേവനം', connected: 'ഡാറ്റ ലഭ്യമാണ്', location: 'കൊച്ചി തുറമുഖം', greeting: 'സുപ്രഭാതം, ദീപക്', planTitle: 'ഇന്നത്തെ യാത്ര ആസൂത്രണം ചെയ്യുക', sub: 'ഇന്നത്തെ അറബിക്കടൽ സ്ഥിതി ഇതാണ്.',
+    app: 'ഓർക്ക', tagline: 'തീരദേശ തീരുമാന സേവനം', connected: 'ഡാറ്റ ലഭ്യമാണ്', location: 'കൊച്ചി തുറമുഖം', greeting: 'സുപ്രഭാതം, ദീപക്', planTitle: 'ഇന്നത്തെ മത്സ്യബന്ധന പദ്ധതി', sub: 'ഇന്നത്തെ അറബിക്കടൽ സ്ഥിതി ഇതാണ്.',
     safeTitle: 'രാവിലെ 11 വരെ കടലിൽ പോകാം', safeBody: 'തീരത്തിനടുത്ത് കടൽ ശാന്തമാണ്. ഉച്ചകഴിഞ്ഞ് കാറ്റ് ശക്തമാകുന്നതിന് മുമ്പ് മടങ്ങുക.', ask: 'ഓർക്കയോട് ചോദിക്കൂ', placeholder: 'ഇപ്പോൾ മീൻപിടിക്കാൻ പോകാമോ?', recommended: 'ശുപാർശ ചെയ്യുന്ന മത്സ്യബന്ധന മേഖല', why: 'ഈ മേഖല എന്തുകൊണ്ട്?', openRoute: 'സുരക്ഷിത വഴി കാണിക്കുക', todaysPlan: 'ഇന്നത്തെ ലളിതമായ പദ്ധതി',
     nav: { home:'ഹോം', zones:'മത്സ്യ മേഖലകൾ', weather:'കടലും കാലാവസ്ഥയും', route:'സുരക്ഷിത വഴി', safety:'സുരക്ഷാ അറിയിപ്പുകൾ', assistant:'ഓർക്കയോട് ചോദിക്കൂ', history:'യാത്രാ ചരിത്രം', settings:'പ്രവേശന സൗകര്യം' },
   },
