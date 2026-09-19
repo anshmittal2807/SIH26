@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { localizeUI } from './i18n.js'
 
 const icons = {
   waves: <><path d="M3 8c2.4 0 2.4-1.6 4.8-1.6S10.2 8 12.6 8 15 6.4 17.4 6.4 19.8 8 22 8"/><path d="M3 13c2.4 0 2.4-1.6 4.8-1.6s2.4 1.6 4.8 1.6 2.4-1.6 4.8-1.6S19.8 13 22 13"/><path d="M3 18c2.4 0 2.4-1.6 4.8-1.6s2.4 1.6 4.8 1.6 2.4-1.6 4.8-1.6S19.8 18 22 18"/></>,
@@ -67,7 +68,10 @@ function App() {
   const t = copy[language]
   const go = next => { setPage(next); setMobileMenu(false); window.scrollTo({ top:0, behavior:'smooth' }) }
   const notify = message => { setToast(message); window.clearTimeout(window.__orcaToast); window.__orcaToast = window.setTimeout(() => setToast(''), 2400) }
-  useEffect(() => { document.documentElement.lang = language }, [language])
+  useEffect(() => {
+    document.documentElement.lang = language
+    return localizeUI(document.getElementById('root'), language)
+  }, [language])
 
   return <div className={`app theme-${theme}`}>
     <a className="skip-link" href="#main">Skip to content</a>
